@@ -1,0 +1,228 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>User Management System</title>
+            <style>
+                /* General Reset */
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+        
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    background-color: #e8eef3;
+                    color: #333;
+                    line-height: 1.6;
+                }
+        
+                header {
+                    background: linear-gradient(45deg, #2c3e50, #34495e);
+                    color: white;
+                    padding: 20px 0;
+                    text-align: center;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                }
+        
+                header h1 {
+                    font-size: 2.5rem;
+                }
+        
+                nav {
+                    background: #34495e;
+                    color: white;
+                    padding: 10px 0;
+                    text-align: center;
+                }
+        
+                nav ul {
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                }
+        
+                nav ul li {
+                    display: inline;
+                }
+        
+                nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bold;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    transition: background 0.3s ease;
+                }
+        
+                nav ul li a:hover {
+                    background: #2c3e50;
+                }
+        
+                main {
+                    max-width: 1200px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background: white;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+        
+                .section-title {
+                    margin-bottom: 20px;
+                }
+        
+                .section-title h2 {
+                    font-size: 1.8rem;
+                    margin-bottom: 15px;
+                    color: #2c3e50;
+                    border-bottom: 3px solid #34495e;
+                    display: inline-block;
+                }
+        
+                .section-title p, ul, ol {
+                    margin-bottom: 20px;
+                }
+        
+                footer {
+                    text-align: center;
+                    padding: 10px 0;
+                    background: #2c3e50;
+                    color: white;
+                    margin-top: 40px;
+                }
+        
+                footer p {
+                    margin: 0;
+                }
+        
+                button {
+                    margin-top: 20px;
+                    padding: 10px 20px;
+                    background-color: #34495e;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: background 0.3s ease;
+                }
+        
+                button:hover {
+                    background-color: #2c3e50;
+                }
+        
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 15px;
+                    border-radius: 10px;
+                }
+        
+                .code-block {
+                    background-color: #f4f4f4;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    padding: 10px;
+                    overflow-x: auto;
+                    font-family: monospace;
+                    color: #333;
+                    margin-bottom: 20px;
+                }
+            </style>
+        </head>
+        <body>
+            <header id="header">
+                <div class="name-section">
+                    <h1>User Management System</h1>
+                    <p>Created By Abdulla Maruf</p>
+                </div>
+            </header>
+        
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <li><a href="#create-table">SQL Create Table</a></li>
+                    <li><a href="#demo">View Demo</a></li>
+                    <li><a href="#setup">Setup Instructions</a></li>
+
+
+                </ul>
+            </nav>
+        
+            <main>
+                <section id="overview" class="section-title">
+                    <h2>Overview</h2>
+                    <p>The <strong>User Management System with SQL </strong> is a robust web application designed for efficiently managing user data. It offers user registration, login, advanced search functionality, and CRUD operations, ensuring a comprehensive platform for user information management.</p>
+                </section>
+        
+                <section id="features" class="section-title">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>User registration with detailed information fields.</li>
+                        <li>Secure user sign-in with timestamps for tracking.</li>
+                        <li>Advanced search options, including:</li>
+                        <ul>
+                            <li>Search by username, first/last name, salary, or age.</li>
+                            <li>Search users by salary or age ranges.</li>
+                            <li>Search users registered after or on the same day as another user.</li>
+                            <li>Retrieve users who registered today or have never signed in.</li>
+                        </ul>
+                        <li>Dynamic table for real-time user management.</li>
+                        <li>Full support for adding, editing, and deleting users.</li>
+                    </ul>
+                </section>
+                <section id="technologies">
+                    <h2>Technologies</h2>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript.</li>
+                        <li><strong>Backend:</strong> Node.js with Express.js.</li>
+                        <li><strong>Database:</strong> MySQL for data management.</li>
+                        <li><strong>Other Tools:</strong> XAMPP and dotenv.</li>
+                    </ul>
+                </section>
+               
+                </section>
+        
+                <section id="create-table" class="section-title">
+                    <h2>SQL Create Table</h2>
+                    <p>Use the following SQL statement to create the users table:</p>
+                    <div class="code-block">
+                        CREATE TABLE Users(
+                            username VARCHAR(50) PRIMARY KEY,
+                            password VARCHAR(50),
+                            firstname VARCHAR(50),
+                            lastname VARCHAR(50),
+                            salary FLOAT,
+                            age INTEGER,
+                            registerday DATE,
+                            signintime DATETIME
+                        );
+                    </div>
+                </section>
+                <section id="demo" class="section-title">
+                    <h2>View Demo</h2>
+                    <p>Watch the demonstration of the application here:</p>
+                    <a href="https://youtu.be/G66KqOr02bk" target="_blank">YouTube Demo</a>
+                </section>
+        
+                <section id="setup" class="section-title">
+                    <h2>Setup Instructions</h2>
+                    <ol>
+                        <li>Clone the repository to your local machine.</li>
+                        <li>Set up the backend by navigating to the project folder and running <code>npm start</code>.</li>
+                        <li>Access the frontend via <a href="http://localhost/database_javascript/project1/Frontend/auth.html" target="_blank">http://localhost/database_javascript/project1/Frontend/auth.html</a>.</li>
+                    </ol>
+            </main>
+        
+            <footer>
+                <p>&copy; 2025 User Management System</p>
+            </footer>
+        </body>
+        </html>
+        

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRC Projects</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e8eef3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(45deg, #2c3e50, #34495e);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: #34495e;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #2c3e50;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            margin-bottom: 20px;
+        }
+
+        .section-title h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 3px solid #34495e;
+            display: inline-block;
+        }
+
+        .section-title p, ul, ol {
+            margin-bottom: 20px;
+        }
+
+        .robot-pic-box {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .robot-pic {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .robot-year-info {
+            max-width: 250px;
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+        }
+
+        .team-pic-box {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .team-pic {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> FIRST Robotic Team# 5065</h1>
+        <p>Created By Abdulla Maruf & Team 5065</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#robot-years">Robot Years</a></li>
+            <li><a href="#skills">Skills Gained</a></li>
+            <li><a href="#team">Team</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="overview" class="section-title">
+            <h2>Overview</h2>
+            <p>The FIRST Robotic volunteering showcases robots built in the years 2018, 2019, and 2020. The project includes hardware components, wiring details, and pictures of each robot, as well as tasks completed during each year. Through this project, I gained hands-on experience in various areas of robotics and engineering, including hardware design, electrical wiring, sensor integration, and troubleshooting. I also developed skills in teamwork, project management, and problem-solving, as well as a deeper understanding of the technical aspects of robotics competitions. The **FIRST Robotics Competition (FRC)** is an international high school robotics competition where teams of students, coaches, and mentors build robots within six weeks to compete in a yearly game. Robots, weighing up to 125 pounds, perform tasks like scoring balls, hanging on bars, and balancing on field elements. Each year, the game and required tasks change. Teams receive a standard set of parts but are also encouraged to create custom components. FRC is one of five robotics programs organized by FIRST.</p>
+
+        </section>
+
+        <section id="robot-years" class="section-title">
+            <h2>Robot Build Years</h2>
+            <div class="robot-pic-box">
+
+                <div>
+                    <img src="Robot0.jpg" alt="Robot 2018" class="robot-pic">
+                    <div class="robot-year-info">
+                        <h3>2018</h3>
+                        <p>Event:Power UP</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="Robot.jpg" alt="Robot 2019" class="robot-pic">
+                    <div class="robot-year-info">
+                        <h3>2019</h3>
+                        <p>Event:Deep Space</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="Robot2.jpg" alt="Robot 2020" class="robot-pic">
+                    <div class="robot-year-info">
+                        <h3>2020</h3>
+                        <p>Event:Infinite Recharge</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <section id="skills" class="section-title">
+            <h2>Skills Gained</h2>
+            <ul>
+                <li>Learned engineering and design principles through building and competing with my own robot.</li>
+                <li>Developed technical skills in wiring, programming, fabricating, and assembling robotic systems.</li>
+                <li>Gained proficiency in using sophisticated software, hardware, and power tools.</li>
+                <li>Improved teamwork, communication, and interpersonal skills through collaboration with my team.</li>
+                <li>Developed leadership, marketing, and fundraising skills to support team goals.</li>
+                <li>Built confidence through problem-solving and overcoming challenges in a competitive environment.</li>
+                <li>Enhanced workforce skills, including time management, collaboration, and working under pressure.</li>
+                <li>Learned from professional engineers, gaining insights into real-world engineering practices.</li>
+                <li>Mastered STEM skills and applied them to practical challenges in robotics.</li>
+
+            </ul>
+        </section>
+        
+        <section id="team" class="section-title">
+            <h2>Team </h2>
+            <div class="team-pic-box">
+                <div>
+                    <img src="team.jpg" alt="Team Picture" class="team-pic">
+                    <div class="robot-year-info">
+                        <h3>Team 5065 :Knights</h3>
+                        <p>Our team has been working on the FRC projects for multiple years, building robots and improving performance each season. We focus on collaboration, engineering excellence, and continuous improvement.</p>
+                    </div>
+                </div>
+                
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FRC Projects</p>
+    </footer>
+</body>
+</html>

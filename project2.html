@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftUI Event Management App</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e8eef3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(45deg, #2c3e50, #34495e);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: #34495e;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #2c3e50;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            margin-bottom: 20px;
+        }
+
+        .section-title h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 3px solid #34495e;
+            display: inline-block;
+        }
+
+        .section-title p, ul, ol {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #34495e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #34495e;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="name-section">
+            <h1>SwiftUI Event Management App</h1>
+            <p>Created By Abdulla Maruf</p>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#problem-statement">Problem Statement</a></li>
+            <li><a href="#solution">My Solution</a></li>
+            <li><a href="#tools">Technologies Used</a></li>
+            <li><a href="#how-to-run">How to Run the App</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="overview" class="section-title">
+            <h2>Overview</h2>
+            <p>While trying to discover local events, I realized that many people face difficulties in quickly finding, joining, and tracking events in their area. Many existing apps are either too cluttered or lack simple user flows for easy event management.</p>
+
+        </section>
+
+        <section id="problem-statement" class="section-title">
+            <h2>Problem Statement</h2>
+            <p>Many people struggle to find, join, and track events in their local area due to the complexity or poor user experience of current event management apps. These apps often overwhelm users with too much information or lack an easy-to-navigate interface, making event management cumbersome.</p>
+        </section>
+
+        <section id="solution" class="section-title">
+            <h2>My Solution</h2>
+            <p>This SwiftUI Event Management App solves these issues by providing a simple, intuitive platform for users to browse and join local events. The app offers user authentication, event listings, and a custom calendar to track events. This approach allows users to easily keep their event plans organized.</p>
+        </section>
+
+        <section id="tools" class="section-title">
+            <h2>Technologies Used</h2>
+            <ul>
+                <li><strong>SwiftUI:</strong> For building the user interface.</li>
+                <li><strong>Xcode:</strong> The development environment for iOS applications.</li>
+                <li><strong>Figma:</strong> For designing the app's UI/UX, ensuring a user-friendly experience.</li>
+            </ul>
+        </section>
+
+        <section id="how-to-run" class="section-title">
+            <h2>How to Run the App</h2>
+            <ol>
+                <li>Clone the Repository.</li>
+                <li>Open the Project in Xcode.</li>
+                <li>Run the App on a simulator or a physical iOS device.</li>
+            </ol>
+            <button onclick="window.location.href='index.html';">Go to Main Page</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SwiftUI Event Management App</p>
+    </footer>
+</body>
+</html>

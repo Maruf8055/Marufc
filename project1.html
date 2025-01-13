@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siemens NX CAD Project</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e8eef3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(45deg, #2c3e50, #34495e);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: #34495e;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #2c3e50;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            margin-bottom: 20px;
+        }
+
+        .section-title h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 3px solid #34495e;
+            display: inline-block;
+        }
+
+        .section-title p, ul, ol {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #34495e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #34495e;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="name-section">
+            <h1>Siemens NX CAD Project</h1>
+            <p>Created By Abdulla Maruf</p>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#problem-statement">Problem Statement</a></li>
+            <li><a href="#tools">Libraries & Tools</a></li>
+            <li><a href="#features">Features</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <section id="overview" class="section-title">
+            <h2>Overview</h2>
+            <p>The Rotating Parking Structure project aims to address urban parking challenges by providing an efficient, space-saving solution. Utilizing NX CAD for design, the project incorporates a rotating mechanism to maximize parking space usage, making it an ideal solution for densely populated areas. This innovative design minimizes the time spent searching for parking, enhancing the user experience.</p>
+            <img src="CadD.jpg" alt="Overview Image">
+        </section>
+
+        <section id="problem-statement" class="section-title">
+            <h2>Problem Statement</h2>
+            <p>The Siemens NX CAD Rotating Parking Structure addresses urban parking challenges by providing an innovative and space-saving solution. Utilizing NX CAD, it incorporates 3D modeling with a rotation mechanism, an elevator system for vertical movement, and a gear-operated structure for seamless car retrieval.</p>
+        </section>
+
+        <section id="tools" class="section-title">
+            <h2>Libraries & Tools Used</h2>
+            <ul>
+                <li><strong>NX CAD:</strong> Used for 3D modeling and design of the rotating parking structure.</li>
+            </ul>
+        </section>
+
+        <section id="features" class="section-title">
+            <h2>Features</h2>
+            <ul>
+                <li>Rotating mechanism to save space and reduce vehicle retrieval time.</li>
+                <li>Elevator system for vertical movement, allowing cars to go up and down.</li>
+                <li>The top section moves in the opposite direction to the bottom section for efficient parking.</li>
+                <li>Operated by a gear system for smooth and reliable functionality.</li>
+            </ul>
+        </section>
+
+
+            <button onclick="window.location.href='index.html';">Go to Main Page</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Siemens NX CAD Project</p>
+    </footer>
+</body>
+</html>

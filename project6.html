@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone-Project-Dashboard</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        nav {
+            background: #34495e;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #34495e;
+            display: inline-block;
+        }
+
+        section p, ul, ol {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: square;
+            padding-left: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Drone-Project-Dashboard</h1>
+        <p>Created By Abdulla Maruf</p>
+    </header>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#objectives">Objectives</a>
+        <a href="#features">Features</a>
+        <a href="#tools-used">Tools Used</a>
+        <a href="#visualizations">Visualizations</a>
+        <a href="#usage">Usage</a>
+        <a href="#future-improvements">Future Improvements</a>
+
+    </nav>
+
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>The <strong>Data Dashboard for KPI Analysis</strong> is an Excel-based solution designed to provide clear, concise, and visual insights into project performance and key metrics. It leverages Excel’s data visualization tools to track and display project timelines, budget utilization, task progress, and other key performance indicators (KPIs).</p>
+        </section>
+
+        <section id="objectives">
+            <h2>Objectives</h2>
+            <ul>
+                <li>Create an easy-to-use Excel dashboard for visualizing KPIs.</li>
+                <li>Track project progress, budget, and task completion effectively.</li>
+                <li>Provide stakeholders with a quick, visual summary of performance metrics.</li>
+            </ul>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li><strong>Interactive Excel Dashboard:</strong> A single Excel file containing various KPI charts.</li>
+                <li><strong>Gantt Chart:</strong> Tracks project phases and timelines visually.</li>
+                <li><strong>Budget Chart:</strong> Compares planned and actual expenditures using bar/line charts.</li>
+                <li><strong>Task Completion Pie Chart:</strong> Visual representation of completed, ongoing, and pending tasks.</li>
+                <li><strong>Summary Table:</strong> Key performance metrics summarized for quick insights.</li>
+            </ul>
+        </section>
+
+        <section id="tools-used">
+            <h2>Tools Used</h2>
+            <ul>
+                <li><strong>Microsoft Excel:</strong> The primary tool used for data analysis and visualization.</li>
+                <li><strong>Excel Functions:</strong> SUM, IF, VLOOKUP, and INDEX-MATCH functions for data manipulation.</li>
+                <li><strong>Charts:</strong> Gantt chart, bar chart, line chart, and pie chart for visualization.</li>
+            </ul>
+        </section>
+
+        <section id="visualizations">
+            <h2>Visualizations</h2>
+            <p>The dashboard includes the following visualizations:</p>
+            <ul>
+                <li><strong>Gantt Chart:</strong> Displays the project schedule, including start and end dates for each phase.</li>
+                <li><strong>Budget Analysis Chart:</strong> Shows budgeted vs. actual spending over time.</li>
+                <li><strong>Task Completion Pie Chart:</strong> Illustrates the percentage of tasks completed, in progress, or not started.</li>
+            </ul>
+            <div class="image-container">
+                <img src="gantt_chart.png" alt="Gantt Chart Visualization">
+                <img src="budget_chart.png" alt="Budget Chart Visualization">
+                <img src="task_completion_pie_chart.png" alt="Task Completion Pie Chart">
+            </div>
+        </section>
+
+        <section id="usage">
+            <h2>Usage</h2>
+            <ol>
+                <li><strong>Open the Excel File:</strong> Double-click the <code>KPI_Dashboard.xlsx</code> file to open it in Excel.</li>
+                <li><strong>Data Entry:</strong> Update the raw data tables with your current project information:</li>
+                <ul>
+                    <li><strong>Timeline Data:</strong> Add project tasks, start dates, and end dates for the Gantt chart.</li>
+                    <li><strong>Budget Data:</strong> Enter planned and actual expenses in the budget sheet.</li>
+                    <li><strong>Task Data:</strong> Update task statuses (Completed, In Progress, On Hold) in the task sheet.</li>
+                </ul>
+                <li><strong>View the Dashboard:</strong> Navigate to the Dashboard tab to see the updated visualizations.</li>
+            </ol>
+        </section>
+
+        <section id="future-improvements">
+            <h2>Future Improvements</h2>
+            <ul>
+                <li><strong>Automated Data Update:</strong> Implement Excel macros to refresh charts automatically.</li>
+                <li><strong>Enhanced Filters:</strong> Add slicers or filters for better data exploration.</li>
+                <li><strong>More KPI Metrics:</strong> Expand the dashboard to include additional KPIs like ROI, efficiency rates, and forecast accuracy.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Abdulla Maruf. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
