@@ -263,9 +263,13 @@ footer {
 }
 
 
+/* Avoid adjusting layout based on screen size */
+@media screen and (max-width: 1024px) {
+    /* No changes needed, since you want no adjustments for different screen sizes */
+}
 
+/* --------------------------------Responsive Design -----------------------------
 
-/* --------------------------------Responsive Design ----------------------------------*/
 @media screen and (max-width: 1024px) {
     #header {
         flex-direction: column;
@@ -351,6 +355,8 @@ footer {
         padding: 8px 15px;
     }
 }
+
+-----*/
 
 /* ---------------------------------Project Styles ------------------------*/
 /* Updated Project Box Styles */
