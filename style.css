@@ -20,11 +20,19 @@ header {
     align-items: center;
     background: #1a252f;
     padding: 1.2rem 2rem;
-    position: sticky;
+    position: fixed; /* Changed from sticky to fixed */
     top: 0;
+    left: 0; /* Ensure it stays at the top-left */
+    width: 100%; /* Ensure the header stretches across the screen */
     z-index: 10;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
+
+/* Add padding to the body to prevent content from being hidden under the fixed header */
+body {
+    padding-top: 80px; /* Adjust this value based on the height of your header */
+}
+
 
 .logo {
     font-size: 1.8rem;
