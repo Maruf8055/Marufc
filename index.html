@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Devicon -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <title>Abdulla Maruf | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">AM</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">About Me</a></li> <!-- Updated link to profile picture section -->
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero"> <!-- Added id="hero" to target this section -->
+    <img src="images/Myprofilepic.jpg" alt="Abdulla Maruf" class="profile-pic" />
+    <h1>ABDULLA MARUF </h1>
+    <p class="tagline">Detail-oriented Computer Science student at Wayne State University with a strong academic foundation and hands-on experience in full-stack development, data science, and CAD systems. Passionate about building real-world solutions and helping others through technology.</p>
+  </section>
+  
+
+  <section id="education">
+    <h2>Education</h2>
+  
+    <div class="education-item">
+      <h3>Wayne State University</h3>
+      <p>Detroit, MI</p>
+      <ul>
+        <li><strong>Major:</strong> Bachelor of Science in Computer Science (In Progress)</li>
+        <li><strong>Minor:</strong> Electrical and Computer Engineering</li>
+        <li><strong>Honors:</strong> Irvin D. Honors College</li>
+        <li><strong>Expected Graduation:</strong> Summer 2025</li>
+        <li><strong>Relevant Coursework:</strong> Problem Solving and Programming, Fundamental Structures in Computer Science, Computer Science I & II, Ethics in Computer Science, Java Programming, Computer Architecture and Organization, Algorithm Design and Analysis, Software Engineering, Computer Operating Systems, Introduction to Theoretical Computer Science, Introduction to Database Management Systems</li>
+      </ul>
+      <button class="open-modal" data-modal="modal-wsu-dean">Dean's List</button>
+    </div>
+  
+    <div class="education-item">
+      <h3>Wayne County Community College District</h3>
+      <p>Detroit, MI</p>
+      <ul>
+        <li><strong>Degree:</strong> Associate of Science in Computer Information Systems</li>
+        <li><strong>Graduation:</strong> 2020 – 2022</li>
+        <li><strong>Honors:</strong> Phi Theta Kappa</li>
+        <li><strong>Relevant Coursework:</strong> Analytic Geometry & Calculus I–III, Physics for Scientists & Engineers I & II, C Programming Language, Java Programming Language, English I & II, Fundamentals of Speech, Psychology, Introduction to Computer Information Systems</li>
+      </ul>
+      <button class="open-modal" data-modal="modal-wcccd-ptk">PTK</button>
+      <button class="open-modal" data-modal="modal-wcccd-dean">Dean's List</button>
+    </div>
+  </section>
+  
+  <!-- Modals -->
+  <div id="modal-wsu-dean" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" src="images/DeanWSU.jpg" alt="WSU Dean's List">
+  </div>
+  
+  <div id="modal-wcccd-ptk" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" src="images/PTK.png" alt="Phi Theta Kappa Certificate">
+  </div>
+  
+  <div id="modal-wcccd-dean" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" src="images/DeanListWCCCD.png" alt="WCCCD Dean's List">
+  </div>
+
+
+  <section id="experience" class="experience">
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>Software Engineering Fellow – Headstarter</h3>
+      <ul>
+        <li>Created web applications using Next.js, OpenAI, Firebase, and Stripe API, delivering innovative solutions that enhanced user experience.</li>
+        <li>Led a team of 4 engineers, delivering projects 13% ahead of schedule by implementing Agile methodologies.</li>
+        <li>Mentored by active engineers at Amazon and Bloomberg, improving CI/CD pipelines and adopting Git best practices, increasing deployment efficiency by 30% and reducing integration errors.</li>
+        <li>Collaborated on technical problem-solving, ensuring timely project delivery.</li>
+      </ul>
+    </div>
+    
+    <div class="job">
+      <h3>Pharmacy Tech Support – FRJ Pharmacy</h3>
+      <ul>
+        <li>Provided technical support for pharmacy hardware and software, resolving over 45 issues weekly to maintain smooth workflows.</li>
+        <li>Assisted over 30 customers daily, both by phone and in-person, ensuring timely and accurate support.</li>
+        <li>Set up workstations and configured pharmacy management software, optimizing performance and reducing processing times by 20%.</li>
+        <li>Supported pharmacists in preparing 600+ prescriptions weekly, managing inventory, and ensuring timely and accurate medication delivery.</li>
+        <li>Delivered IT support within a pharmacy environment, ensuring system operations and data management were aligned with regulatory requirements.</li>
+        <li>Troubleshot technical issues and enhanced operational efficiency through proactive problem-solving and attention to compliance.</li>
+      </ul>
+    </div>
+    
+    <div class="job">
+        <h3>First Robotics Competition Volunteer</h3>
+        <ul>
+          <li>Gained hands-on experience in robotics and engineering, including hardware design, electrical wiring, and troubleshooting.</li>
+          <li>Developed skills in teamwork, project management, and technical problem-solving during high-pressure build and competition cycles.</li>
+          <li>Worked with student-led teams to build competition-ready robots under tight six-week deadlines.</li>
+          <li>Supported events showcasing robots from the 2017–2020 seasons, including tasks such as scoring, balancing, and navigating complex field elements.</li>
+          <li>Learned about international robotics competition structures, rules, and annual game themes while helping manage field operations.</li>
+        </ul>
+        <button class="open-modal" data-modal="modal-frc-volunteer">View Details</button>
+      </div>
+    </section>
+    <div id="modal-frc-volunteer" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+          <h2>Overview</h2>
+          <p>The FIRST Robotic volunteering showcases robots built in the years 2018, 2019, and 2020. The project includes hardware components, wiring details, and pictures of each robot, as well as tasks completed during each year. Through this project, I gained hands-on experience in various areas of robotics and engineering, including hardware design, electrical wiring, sensor integration, and troubleshooting.</p>
+          <p>I also developed skills in teamwork, project management, and problem-solving, as well as a deeper understanding of the technical aspects of robotics competitions.</p>
+          <p><strong>FIRST Robotics Competition (FRC)</strong> is an international high school robotics competition where teams of students, coaches, and mentors build robots within six weeks to compete in a yearly game. Robots, weighing up to 125 pounds, perform tasks like scoring balls, hanging on bars, and balancing on field elements. Each year, the game and required tasks change. Teams receive a standard set of parts but are also encouraged to create custom components. FRC is one of five robotics programs organized by FIRST.</p>
+          
+
+      
+          <h2>Skills Gained</h2>
+          <ul>
+            <li>Learned engineering and design principles through building and competing with my own robot.</li>
+            <li>Developed technical skills in wiring, programming, fabricating, and assembling robotic systems.</li>
+            <li>Gained proficiency in using sophisticated software, hardware, and power tools.</li>
+            <li>Improved teamwork, communication, and interpersonal skills through collaboration with my team.</li>
+            <li>Developed leadership, marketing, and fundraising skills to support team goals.</li>
+            <li>Built confidence through problem-solving and overcoming challenges in a competitive environment.</li>
+            <li>Enhanced workforce skills, including time management, collaboration, and working under pressure.</li>
+            <li>Learned from professional engineers, gaining insights into real-world engineering practices.</li>
+            <li>Mastered STEM skills and applied them to practical challenges in robotics.</li>
+          </ul>
+      
+          <h2>Team</h2>
+          <p><strong>Team 5065: Knights</strong><br>
+          Our team has been working on the FRC projects for multiple years, building robots and improving performance each season. We focus on collaboration, engineering excellence, and continuous improvement.</p>
+
+                    <!-- 📸 Images Section -->
+                    <div class="frc-images">
+                        <img src="images/Team.jpg" alt="FRC Robot 2018">
+                        <img src="images/Robot.jpg" alt="FRC Robot 2019">
+                        <img src="images/Robot2.jpg" alt="FRC Robot 2020">
+                      </div>
+        </div>
+      </div>
+      
+  
+  
+
+
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+  
+    <!-- Siemens NX project (unchanged) -->
+    <div class="job">
+      <h3>Siemens NX CAD Rotating Parking Structure</h3>
+      <ul> 
+        <li>The Siemens NX CAD Rotating Parking Structure tackles urban parking problems with an innovative and space-saving solution.</li>
+        <li>Leveraging NX CAD, the project features 3D modeling with a rotation mechanism, an elevator system for vertical movement, and a gear-operated structure for easy car retrieval.</li>
+        <li>Achievements include recognition as the NX CAD Best in Section Winner and completion of the Siemens NX CAD certification, showcasing proficiency in advanced CAD design.</li>
+        <li>Key skills include 3D modeling, design optimization, and mechanical system integration, addressing challenges in production costs, lead times, and assembly processes.</li>
+      </ul>
+      
+      <p>
+        <button class="open-modal" data-modal="modal1">View Project Details/Demo</button> |        <button class="open-modal" data-modal="modalPreview1">Preview</button> |
+        <a href="https://github.com/Maruf8055/Siemens-NX-CAD-Project" target="_blank">View Code</a>
+
+      </p>
+    </div>
+  
+    <!-- Modal 1 (already present) -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">×</span>
+        <h2>Siemens NX CAD Rotating Parking Structure</h2>
+        <h3>Overview</h3>
+        <p>The Rotating Parking Structure project aims to address urban parking challenges by providing an efficient, space-saving solution. Utilizing NX CAD for design, the project incorporates a rotating mechanism to maximize parking space usage, making it an ideal solution for densely populated areas. This innovative design minimizes the time spent searching for parking, enhancing the user experience.        </p>
+        <img src="./Images/CadCertificate.jpg" alt="Overview Image" style="width:100%; border-radius: 8px; margin: 1rem 0;">
+        <h3>Problem Statement</h3>
+        <p>The Siemens NX CAD Rotating Parking Structure addresses urban parking challenges by providing an innovative and space-saving solution. Utilizing NX CAD, it incorporates 3D modeling with a rotation mechanism, an elevator system for vertical movement, and a gear-operated structure for seamless car retrieval.</p>
+        <h3>Libraries & Tools Used</h3>
+        <ul>
+          <li><strong>NX CAD</strong>: Used for 3D modeling and design of the rotating parking structure.</li>
+        </ul>
+        <h3>Features</h3>
+        <ul>
+          <li>Rotating mechanism to save space and reduce vehicle retrieval time.</li>
+          <li>Elevator system for vertical movement, allowing cars to go up and down.</li>
+          <li>The top section moves in the opposite direction to the bottom section for efficient parking.        </li>
+          <li>Operated by a gear system for smooth and reliable functionality.</li>
+        </ul>
+      </div>
+    </div>
+  <!-- Preview Modal -->
+  <div id="modalPreview1" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('modalPreview1')">×</span>
+      <img src="images/NX.png" alt="Preview" style="width:100%; border-radius: 8px; margin: 1rem 0;">
+    </div>
+  </div>
+
+
+    <div class="job">
+        <h3>Heart Disease Prediction Model</h3>
+        <ul>
+          <li>A machine learning-based web application designed to predict the likelihood of heart disease using patient data.</li>
+          <li>Incorporates KNN, Decision Trees, and Logistic Regression algorithms for predictions.</li>
+          <li>Built with Flask, featuring interactive input and result display.</li>
+          <li>Includes comprehensive exploratory data analysis (EDA) with visualizations like histograms and boxplots.</li>
+        </ul>
+        <p><button class="open-modal" data-modal="modal7">View Project Details/Demo</button> | <button class="open-modal" data-modal="modalPreview2">Preview</button> |
+              <a href=" https://github.com/Maruf8055/Heart-Disease-Prediction " target="_blank">View Code</a>
+         </p>
+      </div>
+      
+      <!-- Modal 7 for Heart Disease Prediction Model with Flask -->
+      <div id="modal7" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">×</span>
+          <h2>Heart Disease Prediction Model with Flask</h2>
+      
+          <h3>Project Overview</h3>
+          <p>
+            This project is a machine learning-based web application designed to predict the likelihood of heart disease using patient data. It incorporates three machine learning algorithms—K-Nearest Neighbors (KNN), Decision Trees, and Logistic Regression—along with exploratory data analysis (EDA) to provide insights and predictions. The model is deployed using the Flask framework, offering an interactive interface for users to input data and receive predictions.
+          </p>
+      
+          <h3>Key Features</h3>
+          <ul>
+            <li><strong>Machine Learning Models:</strong></li>
+            <ul>
+              <li>K-Nearest Neighbors (KNN)</li>
+              <li>Decision Trees</li>
+              <li>Logistic Regression</li>
+            </ul>
+            <li><strong>Web Application:</strong></li>
+            <ul>
+              <li>Built with Flask.</li>
+              <li>User-friendly interface for data input and prediction results.</li>
+            </ul>
+            <li><strong>Data Analysis:</strong></li>
+            <ul>
+              <li>Exploratory Data Analysis (EDA) performed on the heart.csv dataset.</li>
+              <li>Visualizations such as histograms, boxplots, and correlation heatmaps.</li>
+            </ul>
+          </ul>
+      
+          <h3>Technologies Used</h3>
+          <ul>
+            <li><strong>Programming Language:</strong> Python</li>
+            <li><strong>Libraries:</strong></li>
+            <ul>
+              <li><strong>Machine Learning:</strong> scikit-learn</li>
+              <li><strong>Data Analysis and Visualization:</strong> pandas, numpy, matplotlib, seaborn</li>
+            </ul>
+            <li><strong>Web Framework:</strong> Flask</li>
+            <li><strong>Dataset:</strong> heart.csv (contains patient data such as age, cholesterol levels, and resting blood pressure).</li>
+          </ul>
+        </div>
+      </div>
+      
+        <!-- Preview Modal -->
+  <div id="modalPreview2" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('modalPreview2')">×</span>
+      <img src="images/HD.png" alt="Preview Image" style="width:100%; border-radius: 8px; margin: 1rem 0;">
+    </div>
+  </div>
+
+    <div class="job">
+        <h3>User Registration and Search System with SQL</h3>
+        <ul>
+          <li>A web application for managing user data with functionalities such as registration, secure sign-in, and dynamic user search.</li>
+          <li>Allows users to filter data based on criteria like name, age, salary range, and registration details.</li>
+          <li>Includes features for real-time database updates, record modification, and deletion.</li>
+          <li>Developed using Node.js, Express.js, MySQL, and a responsive frontend with HTML, CSS, and JavaScript.</li>
+        </ul>
+        <p><button class="open-modal" data-modal="modal6">View Project Details/Demo</button> |  <button class="open-modal" data-modal="modalPreview3">Preview</button> |   <a href=" https://github.com/Maruf8055/User-Registration-and-Search-System-with-SQL-" target="_blank">View Code</a>
+        </div>
+      <!-- Modal 6 for User Registration and Search System with SQL -->
+      <div id="modal6" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">×</span>
+          <h2>User Registration and Search System with SQL</h2>
+      
+          <h3>Overview</h3>
+          <p>
+            The User Management System with SQL is a robust web application designed for efficiently managing user data. It offers user registration, login, advanced search functionality, and CRUD operations, ensuring a comprehensive platform for user information management.
+          </p>
+      
+          <h3>Features</h3>
+          <ul>
+            <li>User registration with detailed information fields.</li>
+            <li>Secure user sign-in with timestamps for tracking.</li>
+            <li>Advanced search options, including:</li>
+            <ul>
+              <li>Search by username, first/last name, salary, or age.</li>
+              <li>Search users by salary or age ranges.</li>
+              <li>Search users registered after or on the same day as another user.</li>
+              <li>Retrieve users who registered today or have never signed in.</li>
+            </ul>
+            <li>Dynamic table for real-time user management.</li>
+            <li>Full support for adding, editing, and deleting users.</li>
+          </ul>
+      
+          <h3>Technologies</h3>
+          <ul>
+            <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+            <li><strong>Backend:</strong> Node.js with Express.js</li>
+            <li><strong>Database:</strong> MySQL for data management</li>
+            <li><strong>Other Tools:</strong> XAMPP and dotenv</li>
+          </ul>
+      
+          <h3>SQL Create Table</h3>
+          <p>Use the following SQL statement to create the users table:</p>
+          <pre>
+      CREATE TABLE Users(
+        username VARCHAR(50) PRIMARY KEY,
+        password VARCHAR(50),
+        firstname VARCHAR(50),
+        lastname VARCHAR(50),
+        salary FLOAT,
+        age INTEGER,
+        registerday DATE,
+        signintime DATETIME
+      );
+          </pre>
+      
+          <h3>View Demo</h3>
+          <p>Watch the demonstration of the application here:</p>
+          <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">YouTube Demo</a></p>
+      
+          <h3>Setup Instructions</h3>
+          <ul>
+            <li>Clone the repository to your local machine.</li>
+            <li>Set up the backend by navigating to the project folder and running <code>npm start</code>.</li>
+            <li>Access the frontend via <a href="http://localhost/database_javascript/project1/Frontend/auth.html" target="_blank">http://localhost/database_javascript/project1/Frontend/auth.html</a>.</li>
+          </ul>
+        </div>
+      </div>
+
+              <!-- Preview Modal -->
+  <div id="modalPreview3" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('modalPreview3')">×</span>
+      <img src="images/SQL.png" alt="Preview Image" style="width:100%; border-radius: 8px; margin: 1rem 0;">
+    </div>
+  </div>
+      
+  
+    <!-- Remaining projects -->
+    <div class="job">
+      <h3>Swift UI Event Management App</h3>
+      <ul>
+        <li>iOS app with user login, event listing, and custom calendar for event management.</li>
+        <li>Built with SwiftUI in Xcode; designed in Figma for a user-friendly experience.</li>
+        <li>Streamlined UI resulted in 95% positive user feedback.</li>
+      </ul>
+      <p><button class="open-modal" data-modal="modal2">View Project Details/Demo</button> | <button class="open-modal" data-modal="modalPreview4">Preview</button> | <a href=" https://github.com/Maruf8055/SwiftUIEventApp " target="_blank">View Code</a>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2>SwiftUI Event Management App</h2>
+          
+            <h3>Overview</h3>
+            <p>
+              While trying to discover local events, I realized that many people face difficulties in quickly finding, joining, and tracking events in their area. Many existing apps are either too cluttered or lack simple user flows for easy event management.
+            </p>
+          
+            <h3>Problem Statement</h3>
+            <p>
+              Many people struggle to find, join, and track events in their local area due to the complexity or poor user experience of current event management apps. These apps often overwhelm users with too much information or lack an easy-to-navigate interface, making event management cumbersome.
+            </p>
+          
+            <h3>My Solution</h3>
+            <p>
+              This SwiftUI Event Management App solves these issues by providing a simple, intuitive platform for users to browse and join local events. The app offers user authentication, event listings, and a custom calendar to track events. This approach allows users to easily keep their event plans organized.
+            </p>
+          
+            <h3>Technologies Used</h3>
+            <ul>
+              <li><strong>SwiftUI:</strong> For building the user interface</li>
+              <li><strong>Xcode:</strong> The development environment for iOS applications</li>
+              <li><strong>Figma:</strong> For designing the app's UI/UX and ensuring a user-friendly experience</li>
+            </ul>
+          
+            <h3>How to Run the App</h3>
+            <ul>
+              <li>Clone the Repository</li>
+              <li>Open the Project in Xcode</li>
+              <li>Run the App on a simulator or a physical iOS device</li>
+      </div>
+    </div>
+                  <!-- Preview Modal -->
+  <div id="modalPreview4" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('modalPreview4')">×</span>
+      <img src="images/UI.png" alt="Preview Image" style="width:100%; border-radius: 8px; margin: 1rem 0;">
+    </div>
+  </div>
+
+    <div class="job">
+        <h3>Pantry Tracker</h3>
+        <ul>
+          <li>Responsive web app for inventory management built with <strong>React.js</strong> and <strong>Material-UI</strong>.</li>
+          <li>Real-time data synchronization using <strong>Firebase Firestore</strong> across all devices.</li>
+          <li>Seamless CRUD operations for viewing, adding, removing, and resetting pantry items.</li>
+          <li>Modern, neon-themed UI for an engaging and smooth user experience.</li>
+          <li>Reduced inventory management time and errors, improving efficiency by <strong>30%</strong>.</li>
+        </ul>
+        <p>
+          <button class="open-modal" data-modal="modal4">View Project Details/Demo</button> |  <button class="open-modal" data-modal="modalPreview5">Preview</button> |
+          <a href=" https://github.com/Maruf8055/PantryTracker " target="_blank">View Code</a>
+        </p>
+      </div>
+      
+      <!-- Modal 4 for Pantry Tracker -->
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">×</span>
+          <h2>Pantry Tracker</h2>
+      
+          <h3>Overview</h3>
+          <p>
+            A responsive pantry inventory manager with sleek visuals and full CRUD functionality backed by Firebase Firestore.
+          </p>
+      
+          <h3>Libraries & Tools Used</h3>
+          <ul>
+            <li><strong>React.js</strong>, <strong>Material-UI</strong>, <strong>Firebase</strong></li>
+          </ul>
+      
+          <h3>Features</h3>
+          <ul>
+            <li>Real-time syncing of pantry items</li>
+            <li>Add/edit/delete features with animations</li>
+            <li>Mobile-first neon-inspired UI</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div id="modalPreview5" class="modal">
+        <div class="modal-content">
+          <span class="close-modal" onclick="closeModal('modalPreview5')">×</span>
+          <img src="images/PT.png" alt="Preview Image" style="width:100%; border-radius: 8px; margin: 1rem 0;">
+        </div>
+      </div>
+  
+      <div class="job">
+        <h3>Drone Project Management Dashboard</h3>
+        <ul>
+          <li>Comprehensive data visualization tool built with Microsoft Excel for tracking drone project performance.</li>
+          <li>Displays KPIs such as project timelines, budget usage, and task progress with real-time updates.</li>
+          <li>Features interactive charts including Gantt Charts, Budget Analysis Graphs, and Task Completion Pie Charts.</li>
+          <li>Empowers stakeholders with insights for informed decision-making and project optimization.</li>
+        </ul>
+      
+        <p>
+          <button class="open-modal" data-modal="modal3">View Project Details/Demo</button> |
+          <button class="open-modal" data-modal="modalPreview6">Preview</button>
+          <a href=" https://github.com/Maruf8055/DroneDashboard " target="_blank">View Code</a>
+
+        </p>
+      </div>
+      
+      <!-- MODAL: Project Details/Demo -->
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">×</span>
+          <h2>Drone Project Management Dashboard</h2>
+      
+          <h3>Overview</h3>
+          <p>
+            The Data Dashboard for KPI Analysis is an Excel-based solution designed to provide clear, concise, and visual insights into project performance and key metrics.
+          </p>
+      
+          <h3>Objectives</h3>
+          <ul>
+            <li>Create an easy-to-use Excel dashboard for visualizing KPIs.</li>
+            <li>Track project progress, budget, and task completion effectively.</li>
+            <li>Provide stakeholders with a quick, visual summary of performance metrics.</li>
+          </ul>
+      
+          <h3>Features</h3>
+          <ul>
+            <li>Interactive Excel Dashboard with various KPI charts</li>
+            <li>Gantt Chart to track project phases and timelines</li>
+            <li>Budget Chart comparing planned and actual expenditures</li>
+            <li>Task Completion Pie Chart for visual task status representation</li>
+            <li>Summary Table for quick insights on key performance metrics</li>
+          </ul>
+      
+          <h3>Tools Used</h3>
+          <ul>
+            <li><strong>Microsoft Excel</strong></li>
+            <li><strong>Excel Functions:</strong> SUM, IF, VLOOKUP, INDEX-MATCH</li>
+            <li><strong>Charts:</strong> Gantt chart, bar chart, line chart, pie chart</li>
+          </ul>
+      
+          <h3>Visualizations</h3>
+          <div class="visualization-images" style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+            <img src="images/gantt_chart.png" alt="Gantt Chart" style="width: 100%; max-width: 300px; border-radius: 8px;">
+            <img src="images/budget_chart.png" alt="Budget Chart" style="width: 100%; max-width: 300px; border-radius: 8px;">
+            <img src="images/task_completion_pie_chart.png" alt="Task Chart" style="width: 100%; max-width: 300px; border-radius: 8px;">
+          </div>
+      
+          <h3>Usage</h3>
+          <ul>
+            <li><strong>Open the Excel File:</strong> Open <em>KPI_Dashboard.xlsx</em> in Excel</li>
+            <li><strong>Data Entry:</strong> Update raw data tables:
+              <ul>
+                <li><strong>Timeline Data:</strong> Add tasks, start dates, end dates</li>
+                <li><strong>Budget Data:</strong> Enter planned and actual expenses</li>
+                <li><strong>Task Data:</strong> Update statuses (Completed, In Progress, On Hold)</li>
+              </ul>
+            </li>
+            <li><strong>View the Dashboard:</strong> Navigate to the Dashboard tab for updated visuals</li>
+          </ul>
+      
+          <h3>Future Improvements</h3>
+          <ul>
+            <li>Automated data refresh using Excel macros</li>
+            <li>Enhanced filters with slicers for better data interaction</li>
+            <li>Additional KPIs such as ROI, efficiency, and forecast accuracy</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- MODAL: Preview (Just the DP Image) -->
+      <div id="modalPreview6" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">×</span>
+          <img src="images/DP.png" alt="Preview Image" style="width:100%; border-radius: 8px; margin: 1rem 0;">
+        </div>
+      </div>
+      
+  </section> 
+
+  
+
+  <!-- <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box"><strong>Languages:</strong> Python, Java, C++, Swift, JavaScript</div>
+      <div class="skill-box"><strong>Frameworks:</strong> React, SwiftUI, Firebase</div>
+      <div class="skill-box"><strong>Tools:</strong> Git, Trello, JIRA, Siemens NX CAD, Power BI, Android Studio</div>
+    </div>
+  </section> -->
+
+
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+  
+      <div class="skill-box">
+        <strong>Languages & Frameworks:</strong><br>
+        <i class="devicon-python-plain colored"></i> Python,
+        <i class="devicon-java-plain colored"></i> Java,
+        <i class="devicon-javascript-plain colored"></i> JavaScript,
+        <i class="devicon-html5-plain colored"></i> HTML5,
+        <i class="devicon-css3-plain colored"></i> CSS3,
+        <i class="devicon-c-plain colored"></i> C,
+        <i class="devicon-cplusplus-plain colored"></i> C++,
+        <i class="devicon-swift-plain colored"></i> Swift/SwiftUI,
+        <i class="devicon-bootstrap-plain colored"></i> Bootstrap,
+        <i class="devicon-matlab-plain colored"></i> MATLAB,
+        <i class="devicon-sqlite-plain colored"></i> SQL,
+        <i class="devicon-nodejs-plain colored"></i> Node.js,
+        <i class="devicon-react-original colored"></i> React,
+        <i class="devicon-nextjs-original"></i> Next.js,
+        <i class="devicon-express-original colored"></i> Express.js,
+        <i class="devicon-tailwindcss-plain colored"></i> TailwindCSS
+        <i class="devicon-react-original colored"></i> React Native,
+        <i class="devicon-expo-original colored"></i> Expo,
+        Full-stack Development
+      </div>
+  
+      <div class="skill-box">
+        <strong>Tools & Applications:</strong><br>
+        <i class="devicon-git-plain colored"></i> Git,
+        <i class="devicon-github-original"></i> GitHub,
+        <i class="devicon-firebase-plain colored"></i> Firebase,
+        <i class="devicon-docker-plain colored"></i> Docker,
+        <i class="devicon-vercel-original"></i> Vercel,
+        <i class="devicon-mysql-plain colored"></i> MySQL,
+        <i class="devicon-xampp-plain colored"></i> XAMPP,
+        <i class="devicon-filezilla-plain"></i> FileZilla,
+        <i class="devicon-postman-plain"></i> Postman,
+        <i class="devicon-visualstudio-plain colored"></i> Visual Studio,
+        <i class="devicon-vscode-plain colored"></i> VS Code,
+        <i class="devicon-androidstudio-plain colored"></i> Android Studio,
+        <i class="devicon-photoshop-plain"></i> Photoshop,
+        <i class="fab fa-microsoft"></i> Microsoft Office (incl. Excel),
+        <i class="fas fa-drafting-compass"></i> Siemens NX, CAD,
+        <i class="devicon-figma-plain colored"></i> Figma,
+        <i class="fas fa-chart-line"></i> Power BI,
+        <i class="fab fa-jira"></i> Jira,
+
+      </div>
+  
+      <div class="skill-box">
+        <strong>IT & Computer Skills:</strong><br>
+        <i class="devicon-linux-plain colored"></i> Linux,
+        <i class="fab fa-windows"></i> Windows,
+        <i class="fab fa-apple"></i> macOS,
+        <i class="fas fa-network-wired"></i> Networking,
+        <i class="fas fa-shield-alt"></i> Firewalls,
+        <i class="fas fa-users-cog"></i> Active Directory
+      </div>
+  
+      <div class="skill-box">
+        <strong>Soft Skills:</strong><br>
+        <i class="fas fa-comments"></i> Communication,
+        <i class="fas fa-brain"></i> Problem Solving,
+        <i class="fas fa-bug"></i> Software Debugging,
+        <i class="fas fa-tasks"></i> Multi-Tasking,
+        <i class="fas fa-vial"></i> Software Testing,
+        <i class="fas fa-project-diagram"></i> SDLC
+      </div>
+  
+    </div>
+  </section>
+  
+  
+<!-- Certifications Section -->
+<section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <div class="certifications-grid">
+      <!-- Certification Box 1 -->
+      <div class="certification-box">
+        <h3>Siemens NX CAD Best in Section Winner</h3>
+        <p>Completed the Siemens NX CAD certification, demonstrating proficiency in advanced CAD design.</p>
+        <button class="open-modal" data-modal="siemensModal">View Certificate</button>
+      </div>
+      
+      <!-- Certification Box 2 -->
+      <div class="certification-box">
+        <h3>Software Testing/QA</h3>
+        <p>Gained expertise in testing methodologies to identify and resolve software defects.</p>
+        <button class="open-modal" data-modal="testingModal">View Certificate</button>
+      </div>
+      
+      <!-- Certification Box 3 -->
+      <div class="certification-box">
+        <h3>Apple Foundation Certificate</h3>
+        <p>Swift UI, MIRRO, Xcode, iOS, Mobile App Development, Keynote, Figma.</p>
+        <button class="open-modal" data-modal="appleModal">View Certificate</button>
+      </div>
+      
+      <!-- Certification Box 4 -->
+      <div class="certification-box">
+        <h3>Business Analyst with Power BI</h3>
+        <p>(IN PROGRESS.)</p>
+        <button class="open-modal" data-modal="powerBiModal">View Certificate</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modals for each certificate -->
+  <!-- Siemens NX CAD Modal -->
+  <div id="siemensModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">×</span>
+      <h3>Siemens NX CAD Best in Section Winner</h3>
+      <img src="images/CadCertificate.jpg"
+       alt="Siemens NX CAD Certificate" style="width:100%; border-radius: 8px; margin: 1rem 0;">
+      <p>Completed the Siemens NX CAD certification, demonstrating proficiency in advanced CAD design.</p>
+
+    </div>
+  </div>
+  
+  <!-- Software Testing/QA Modal -->
+  <div id="testingModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">×</span>
+      <h3>Software Testing/QA</h3>
+      <img src="images/QualityCertificate.png" alt="Software Testing Certificate" style="width:100%; border-radius: 8px; margin: 1rem 0;">
+      <p>Gained expertise in testing methodologies to identify and resolve software defects.</p>
+
+    </div>
+  </div>
+  
+  <!-- Apple Foundation Certificate Modal -->
+  <div id="appleModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">×</span>
+      <h3>Apple Foundation Certificate</h3>
+      <img src="images/AppleCertificate.jpg"  alt="Apple Foundation Certificate" style="width:100%; border-radius: 8px; margin: 1rem 0;">
+      <p>Swift UI, MIRRO, Xcode, iOS, Mobile App Development, Keynote, Figma.</p>
+
+    </div>
+  </div>
+  
+  <!-- Business Analyst with Power BI Modal -->
+  <div id="powerBiModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">×</span>
+      <h3>Business Analyst with Power BI</h3>
+      <img src="images/DataCertificate.png"
+       alt="Business Analyst with Power BI Certificate" style="width:100%; border-radius: 8px; margin: 1rem 0;">
+      <p>IN PROGRESS...</p>
+
+    </div>
+  </div>
+  
+  
+
+
+  <head>
+    <!-- Add Font Awesome link here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+  
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+
+    
+    <!-- Contact box for icons -->
+    <div class="contact-box">
+      <div class="icon-container">
+        
+        <a href="https://www.linkedin.com/in/abdullamaruf/" class="icon" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:aalmaruf143@gmail.com" class="icon">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/Maruf8055" class="icon" target="_blank">
+          <i class="fab fa-github"></i>
+          <p class="email">
+            Email: <a href="mailto:aalmaruf143@gmail.com">aalmaruf143@gmail.com</a>
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <footer>
+    <p>© 2025 Abdulla Maruf</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
