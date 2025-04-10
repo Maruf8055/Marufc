@@ -560,7 +560,7 @@ footer {
     }
   }
   
-  @media (max-width: 480px) {
+  /* @media (max-width: 480px) {
     .hero h1 {
       font-size: 2rem;
     }
@@ -575,5 +575,30 @@ footer {
   
     .logo {
       font-size: 1.4rem;
+    }
+  } */
+
+  /* Media Query for Small Screens */
+@media (max-width: 768px) {
+    nav ul {
+      display: flex;
+      flex-direction: row;    /* Ensure the items stay in a horizontal row */
+      flex-wrap: nowrap;      /* Prevent wrapping */
+      justify-content: center; /* Center the items horizontally */
+      overflow-x: auto;        /* Allow horizontal scrolling if needed */
+      white-space: nowrap;     /* Prevent text wrapping */
+    }
+  
+    nav ul li {
+      margin-right: 15px; /* Add space between items */
+    }
+  
+    nav ul li a {
+      padding: 10px;  /* Optional: Adjust padding to make links more clickable */
+    }
+  
+    .logo {
+      font-size: 1.4rem;
+      /* Adjust logo size if needed */
     }
   }
