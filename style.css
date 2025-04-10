@@ -159,6 +159,12 @@ h2 {
     padding-left: 0.3rem;
 }
 
+/* experience - h3 heading color */
+.job h3 {
+    color: #00f6ff; /* Change h3 color to #00f6ff */
+}
+
+
 /* Projects in Experience */
 .projects ul {
     padding-left: 1.2rem;
