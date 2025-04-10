@@ -609,6 +609,76 @@ footer {
 
 
 
+/* 
+
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+  
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+   @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    section {
+      padding: 2rem 1rem;
+    }
+  
+    .logo {
+      font-size: 1.4rem;
+    }
+  } 
+     Media Query for Small Screens 
+@media (max-width: 768px) {
+    nav ul {
+      display: flex;
+      flex-direction: row;    
+      flex-wrap: nowrap;      
+      justify-content: center; 
+      overflow-x: auto;        
+      white-space: nowrap;     
+    }
+  
+    nav ul li {
+      margin-right: 15px; /* Add space between items 
+    }
+  
+    nav ul li a {
+      padding: 10px;  /* Optional: Adjust padding to make links more clickable 
+    }
+  
+    .logo {
+      font-size: 1.4rem;
+      /* Adjust logo size if needed 
+    }
+  } */
+
+
+
+
+
+
+
 
 
 
@@ -626,7 +696,7 @@ body, html {
   
  /* Default navbar styling */
 nav ul {
-    display: flex;
+    display: fixed;
     justify-content: center;
     list-style: none;
     padding: 0;
